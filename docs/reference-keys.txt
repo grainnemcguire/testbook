@@ -1,11 +1,10 @@
-rendering-book
 mlrwp
 disclaimer
 purpose
 introduction-1
 blog
 f-intro
-getting-started-f-getting-started
+f-getting-started
 programming-language-choice---r-or-python
 getting-started-with-ml
 data
