@@ -1,0 +1,38 @@
+# (PART) Overview of MLRWP {-}
+
+# Machine Learning in Reserving Working Party {#mlrwp}
+
+
+The General Insurance Machine Learning in Reserving working party is an international group of over 40 actuaries, bringing together experts in this field from around the globe.
+
+Our starting premise is that whilst machine learning techniques are widespread in pricing, they are not being adopted ‘on the ground’ in reserving (certainly in the UK).
+The idea of the working party is to help move this forward, by identifying what the barriers are, communicating any benefits, and helping develop the research techniques in pragmatic ways. 
+At the same time we understand the resource and time pressures that reserving actuaries are under and the aim is not to replace existing reserving methods per se, but to start the journey to understanding if and how machine learning may help us in our day to day work. 
+
+Our intention is to develop and undertake our own research.
+To this end, we have a number of workstreams addressing different issues.
+Currently these are:
+
+* Foundations
+* Literature Review
+* Survey
+* Data
+* Research
+
+We anticipate adding additional workstreams covering issues such as pragmatic considerations, and trust and ethics, as our research develops.
+
+**Chair**: Sarah MacDonnell
+
+**Membership**: 48
+
+**Established**: 2019
+
+
+## DISCLAIMER
+
+The views expressed on this site are those of invited contributors and not necessarily those of the Institute and Faculty of Actuaries. 
+The Institute and Faculty of Actuaries do not endorse any of the views stated, nor any claims or representations made in this publication and accept no responsibility or liability to any person for loss or damage suffered as a consequence of their placing reliance upon any view, claim or representation made in this publication. 
+The information and expressions of opinion contained in this publication are not intended to be a comprehensive study, nor to provide actuarial advice or advice of any nature and should not be treated as a substitute for specific advice concerning individual situations. 
+On no account may any part of this publication be reproduced without the written permission of the Institute and Faculty of Actuaries.
+
+

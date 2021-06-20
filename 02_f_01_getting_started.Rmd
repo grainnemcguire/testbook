@@ -1,0 +1,77 @@
+# (PART) Foundations {-}
+
+# Introduction {#f-intro}
+
+The foundations section covers posts that fall under the foundations workstream.
+
+# Getting started {#f-getting-started}
+
+
+*This article was originally posted [here](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/post/intro-to-foundations-blog/) and authored by Nigel Carpenter and Grainne McGuire*
+
+
+Getting started with data science and machine learning (ML) has never been easier or harder. 
+Easier in the sense that there are a wealth of resources available online, but harder in that it can be difficult to know where to start.
+The Foundations workstream of the MLR working party aims to provide some signposts along the machine learning journey, with a focus on material and examples that are relevant to reserving.
+
+
+## Programming language choice -  R or Python?
+
+First bit of advice is don't get bogged down in the language wars! Both have advantages and disadvantages. 
+If you're getting started with ML, then you want to use the language that you will find easiest to quickly learn so that you can focus on the techniques rather than your code syntax and deciphering cryptic error messages.
+
+If your workplace uses one language rather than the other then it will likely make sense to select that language.
+However, if you have no prior experience of either language and your reason for learning one of them is to gain a practical understanding of data science then the following guidance may be helpful. 
+
+* If your academic background is more statistics than computer science then R may better suit your background than Python. 
+* If your aim is to learn machine learning then either language is well suited and both have lots of free learning resources
+* If your aim is to learn leading edge deep neural network techniques, Python is the community's preferred language and has many more learning resources than R
+
+Management of dependencies (i.e. the particular versions of the language and packages used) in Python can be quite important. Particularly in cutting edge applications like neural networks, it may be necessary to use particular versions of packages to ensure that code runs correctly. But even simpler applications, like graphing can fall prey to this, where, for example, plotting code will run for one version of matplotlib but not for a more recent version. For this reason, newcomers to Python may need to get to grips with package management via environments sooner rather than later. Although the same issues can arise in R, anecdotally they appear less often, perhaps because the R core team emphasises backwards compatibility. Therefore, code examples in R are more likely to run without modification. Ultimately, if you use either language for practical applications, you should consider dependency
+
+No matter what language you select, if you start using applications in practice you should consider managing your dependencies appropriately to ensure that code from the past continues to work in future.
+
+
+
+## Getting started with ML
+
+### Data
+
+You may have heard the saying that machine learning is at least 80% data, 20% modelling and that is generally true. 
+The data frequently are the distinguishing factor between good models and great models.
+
+As actuaries, we already have a sound basis in handling data - we are trained to be sceptical of data and to question unusual patterns.
+Many of us have experience of collecting and cleaning data from different sources for reserving and pricing jobs and we understand the importance of checks and reconciliations.
+Therefore, the main learning curves for actuaries in relation to data are likely to involve:
+
+* sourcing external data, e.g. via web-scraping. This also includes learning to access SQL (or similar) data bases.
+* cleaning and processing data in your language of choice (pandas in python may help here; data.table or tidyverse in R)
+
+
+### Methods
+
+For those new to ML, our advice is to approach learning techniques from a familiar direction.
+As actuaries most of us should have some familiarity with Generalised Linear Models (GLMs) if we have studied General Insurance Pricing, so this suggests a starting point. The steps are then:
+
+1. gain familiarity with using GLMs to apply traditional triangular reserving techniques. There are many papers and ready made R packages to help (e.g. `glmReserve()` in the R [ChainLadder](https://cran.r-project.org/web/packages/ChainLadder/index.html) package).
+
+1. apply regularised GLMs (e.g. apply lasso or ridge regression or mixture of both) to fit something that looks like a GLM but in a machine learning way - in these methods, the machine selects features for inclusion in the model.
+
+1. Move onto tree based methods like decision trees and random forests and from there into more advanced ML techniques such as Gradient Boosting Machines (GBMs). Note that GBMs include **XGBoost**, which is very popular among data scientists.
+
+1. At this point you could then move to learning about neural networks. While these are likely to be very useful in the future, they are the least accessible both in terms of the actual methods - you need a good grasp of deep neural networks to understand the techniques most likely to be useful (such as recurrent neural networks - see, e.g., [Deep Triangle](https://arxiv.org/abs/1804.09253)) and also in terms of the data and hardware needed to get good results. You often need lots of data and high end computer equipment (or cloud based virtual machines) to train these models.
+
+
+
+## Foundations workstream
+
+Our task is to provide some stepping stones to getting started with ML.
+On our [Workstream page](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/foundations), we maintain a list of useful resources, including a link to those compiled by a complimentary IFoA group, the [Data Science](https://www.actuaries.org.uk/practice-areas/general-insurance/research-working-parties/data-science) Working Party.
+
+We also have a planned series of articles on getting started in Machine Learning which will be posted over the next few weeks.
+Topics will include getting started with R, data manipulation, graphing, and fitting various methods to claims reserving examples (following the steps outlined above).
+Note that initially our articles will mainly be in R, but we hope to extend content to including python examples in the future.
+
+
+So check back regularly and search for the [foundations](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/tags/foundations/) tag or look at the list of posts to view our content. 
+

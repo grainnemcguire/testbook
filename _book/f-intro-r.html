@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Introduction to R | MLRWP content prototype</title>
+  <meta name="description" content="desc desc" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Introduction to R | MLRWP content prototype" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="desc desc" />
+  <meta name="github-repo" content="grainnemcguire/testbook" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Introduction to R | MLRWP content prototype" />
+  
+  <meta name="twitter:description" content="desc desc" />
+  
+
+<meta name="author" content="MLR working party" />
+
+
+<meta name="date" content="2021-06-20" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="getting-started-f-getting-started.html"/>
+<link rel="next" href="f-glms.html"/>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a>
+<ul>
+<li class="chapter" data-level="0.1" data-path="index.html"><a href="index.html#rendering-book"><i class="fa fa-check"></i><b>0.1</b> Rendering book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#misc-points"><i class="fa fa-check"></i>Misc points</a></li>
+</ul></li>
+<li class="part"><span><b>I Overview of MLRWP</b></span></li>
+<li class="chapter" data-level="1" data-path="mlrwp.html"><a href="mlrwp.html"><i class="fa fa-check"></i><b>1</b> Machine Learning in Reserving Working Party</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="mlrwp.html"><a href="mlrwp.html#disclaimer"><i class="fa fa-check"></i><b>1.1</b> DISCLAIMER</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="purpose.html"><a href="purpose.html"><i class="fa fa-check"></i><b>2</b> Purpose of the book</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="purpose.html"><a href="purpose.html#introduction-1"><i class="fa fa-check"></i><b>2.1</b> Introduction</a></li>
+<li class="chapter" data-level="2.2" data-path="purpose.html"><a href="purpose.html#blog"><i class="fa fa-check"></i><b>2.2</b> Blog</a></li>
+</ul></li>
+<li class="part"><span><b>II Foundations</b></span></li>
+<li class="chapter" data-level="3" data-path="f-intro.html"><a href="f-intro.html"><i class="fa fa-check"></i><b>3</b> Introduction</a></li>
+<li class="chapter" data-level="4" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html"><i class="fa fa-check"></i><b>4</b> Getting started {f-getting-started}</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html#programming-language-choice---r-or-python"><i class="fa fa-check"></i><b>4.1</b> Programming language choice - R or Python?</a></li>
+<li class="chapter" data-level="4.2" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html#getting-started-with-ml"><i class="fa fa-check"></i><b>4.2</b> Getting started with ML</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html#data"><i class="fa fa-check"></i><b>4.2.1</b> Data</a></li>
+<li class="chapter" data-level="4.2.2" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html#methods"><i class="fa fa-check"></i><b>4.2.2</b> Methods</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="getting-started-f-getting-started.html"><a href="getting-started-f-getting-started.html#foundations-workstream"><i class="fa fa-check"></i><b>4.3</b> Foundations workstream</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="f-intro-r.html"><a href="f-intro-r.html"><i class="fa fa-check"></i><b>5</b> Introduction to R</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="f-intro-r.html"><a href="f-intro-r.html#why-use-r"><i class="fa fa-check"></i><b>5.1</b> Why use R?</a></li>
+<li class="chapter" data-level="5.2" data-path="f-intro-r.html"><a href="f-intro-r.html#how-do-i-get-started"><i class="fa fa-check"></i><b>5.2</b> How do I get started?</a></li>
+<li class="chapter" data-level="5.3" data-path="f-intro-r.html"><a href="f-intro-r.html#hello-world"><i class="fa fa-check"></i><b>5.3</b> Hello World!</a></li>
+<li class="chapter" data-level="5.4" data-path="f-intro-r.html"><a href="f-intro-r.html#conclusion"><i class="fa fa-check"></i><b>5.4</b> Conclusion</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="f-glms.html"><a href="f-glms.html"><i class="fa fa-check"></i><b>6</b> Reserving with GLMs</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="f-glms.html"><a href="f-glms.html#introduction-2"><i class="fa fa-check"></i><b>6.1</b> Introduction</a></li>
+<li class="chapter" data-level="6.2" data-path="f-glms.html"><a href="f-glms.html#data-1"><i class="fa fa-check"></i><b>6.2</b> Data</a></li>
+<li class="chapter" data-level="6.3" data-path="f-glms.html"><a href="f-glms.html#chain-ladder-model"><i class="fa fa-check"></i><b>6.3</b> Chain ladder model</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="f-glms.html"><a href="f-glms.html#fitting-the-model"><i class="fa fa-check"></i><b>6.3.1</b> Fitting the model</a></li>
+<li class="chapter" data-level="6.3.2" data-path="f-glms.html"><a href="f-glms.html#loss-reserve"><i class="fa fa-check"></i><b>6.3.2</b> Loss reserve</a></li>
+<li class="chapter" data-level="6.3.3" data-path="f-glms.html"><a href="f-glms.html#model-diagnostics"><i class="fa fa-check"></i><b>6.3.3</b> Model diagnostics</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="f-glms.html"><a href="f-glms.html#refining-the-model"><i class="fa fa-check"></i><b>6.4</b> Refining the model</a>
+<ul>
+<li class="chapter" data-level="6.4.1" data-path="f-glms.html"><a href="f-glms.html#simplifying-the-model"><i class="fa fa-check"></i><b>6.4.1</b> Simplifying the model</a></li>
+<li class="chapter" data-level="6.4.2" data-path="f-glms.html"><a href="f-glms.html#identifying-missing-structure"><i class="fa fa-check"></i><b>6.4.2</b> Identifying missing structure</a></li>
+<li class="chapter" data-level="6.4.3" data-path="f-glms.html"><a href="f-glms.html#loss-reserve-1"><i class="fa fa-check"></i><b>6.4.3</b> Loss reserve</a></li>
+</ul></li>
+<li class="chapter" data-level="6.5" data-path="f-glms.html"><a href="f-glms.html#reviewing-this-example"><i class="fa fa-check"></i><b>6.5</b> Reviewing this example</a></li>
+<li class="chapter" data-level="6.6" data-path="f-glms.html"><a href="f-glms.html#practical-use-of-glms-in-traditional-reserving"><i class="fa fa-check"></i><b>6.6</b> Practical use of GLMs in traditional reserving</a>
+<ul>
+<li class="chapter" data-level="6.6.1" data-path="f-glms.html"><a href="f-glms.html#modelling"><i class="fa fa-check"></i><b>6.6.1</b> Modelling</a></li>
+<li class="chapter" data-level="6.6.2" data-path="f-glms.html"><a href="f-glms.html#setting-reserves"><i class="fa fa-check"></i><b>6.6.2</b> Setting reserves</a></li>
+<li class="chapter" data-level="6.6.3" data-path="f-glms.html"><a href="f-glms.html#additional-references"><i class="fa fa-check"></i><b>6.6.3</b> Additional References</a></li>
+</ul></li>
+</ul></li>
+<li class="part"><span><b>III Data workstream</b></span></li>
+<li class="chapter" data-level="7" data-path="introduction-3.html"><a href="introduction-3.html"><i class="fa fa-check"></i><b>7</b> Introduction</a></li>
+<li class="chapter" data-level="8" data-path="d-simulationmachine.html"><a href="d-simulationmachine.html"><i class="fa fa-check"></i><b>8</b> Data Maker - simulating data with simulationmachine</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="d-simulationmachine.html"><a href="d-simulationmachine.html#the-right-time"><i class="fa fa-check"></i><b>8.1</b> The right time</a></li>
+<li class="chapter" data-level="8.2" data-path="d-simulationmachine.html"><a href="d-simulationmachine.html#make-along-with-me"><i class="fa fa-check"></i><b>8.2</b> Make along with me</a></li>
+<li class="chapter" data-level="8.3" data-path="d-simulationmachine.html"><a href="d-simulationmachine.html#little-by-little"><i class="fa fa-check"></i><b>8.3</b> Little by little</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">MLRWP content prototype</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="f-intro-r" class="section level1" number="5">
+<h1><span class="header-section-number">5</span> Introduction to R</h1>
+<p><em>This <a href="https://institute-and-faculty-of-actuaries.github.io/mlr-blog/post/intro-to-r/">article</a> was written by Wan Hsien Heah and originally published on 21 Sep 2020</em></p>
+<p>There are several different data science tools available today.
+R is one such tool that is used quite widely, free and easy to get started with.
+R started out as an experiment at the University of Auckland to see if an existing language called S could be improved such that code would be cleaner and easier to run.
+It has come a long way since its humble beginnings in the mid-90s.
+Today, R is used for a variety of tasks including complex capital model calculations and running machine learning algorithms in pricing and reserving.</p>
+<div id="why-use-r" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Why use R?</h2>
+<p>There are a number of benefits to using R. These are:</p>
+<ul>
+<li><p><strong>Free</strong>: There is no license fee associated with using R (although beware that there may be license restrictions with using R packages).</p></li>
+<li><p><strong>Widely used</strong>: R has a large user base, with data scientists, data miners, statisticians and actuaries using the tool around the world. That means that it only takes a quick search on the internet to get help with any problem that you might be experiencing with coding in R.</p></li>
+<li><p><strong>An R-ready workforce</strong>: R is now a part of the UK Institute and Faculty of Actuaries (IFoA) exam syllabus. Increasingly, more and more university students are also learning R as part of the undergraduate course in statistics and actuarial science.</p></li>
+<li><p><strong>R is fast</strong>: R is usually faster at computational problems compared to traditional tools like Excel. For example, R can generate a million random standard Normal samples in less than a second. This is because of the way R is structured and the way it works. R can even be faster than server-based languages like SQL.</p></li>
+<li><p><strong>Packages</strong>: There are many freely available reusable R code libraries available online called packages. These packages have been built by other R users and perform a variety of calculations or processes which means that you do not have to start from scratch all the time. The crowd-sourced sharing of packages helps accelerate development time in R. We will cover some of the more useful packages for actuaries in our future blog posts.</p></li>
+</ul>
+</div>
+<div id="how-do-i-get-started" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> How do I get started?</h2>
+<p>R is available to download from the Comprehensive R Archive Network (CRAN) at <a href="https://cran.r-project.org/" class="uri">https://cran.r-project.org/</a>.
+CRAN is a network of servers around the world that contains copies of the R application and the various packages which is continuously being updated and maintained.
+To get started, you will first need to download R from the CRAN homepage.</p>
+<p><img src="images/CRAN%20Landing.jpg" alt="CRAN homepage" width="95%"/></p>
+<p>Select the appropriate download for your operating system and follow the usual instructions to compile.
+You will usually want to download the most recent version, but occasionally you may need to download older versions if, for example, a package you need to use has not yet been updated to run on the latest version of R.</p>
+<p>The instructions for each platform will be on the website as you click the version of R that you need.
+For this blog post, we will focus on the Windows version of R as it is the more common platform used by actuaries.</p>
+<p>For first time users, you will need to install base R.
+It is important to note that base R is a console application i.e. the main interaction is through text.
+Most users will want to use an Integrated Development Environment (IDE) or a user interface. So, after downloading R, you should consider installing an IDE such as RStudio.
+You should install R first, then RStudio.</p>
+<p>RStudio provides a graphical user interface (GUI) that provides a more visual interaction when using R.
+You can download a free desktop version from the RStudio website: <a href="https://rstudio.com/" class="uri">https://rstudio.com/</a>.
+There are also paid options for support and for running and maintaining a server.</p>
+<p>Once you have both R and RStudio installed, you are ready to begin coding.</p>
+</div>
+<div id="hello-world" class="section level2" number="5.3">
+<h2><span class="header-section-number">5.3</span> Hello World!</h2>
+<p>Now that you have the minimum software required installed, you can start coding.
+Getting started can be quite daunting as there are various schools of thought on how to use R and which packages.
+Base R is what comes built into R.
+There are also a growing series of data manipulation packages commonly known as tidyverse which consists of packages developed and maintained by RStudio.
+Beyond that there are other data manipulation packages such as data.table.
+Each have their advantages and disadvantages depending on the precise operation that you would like to perform</p>
+<p>There are several free resources available for learning R which you can find on the internet. We list a few of them here:</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://r4ds.had.co.nz/">R for Data Science</a></li>
+<li><a href="https://www.r-bloggers.com/">R-bloggers - an aggregator of online articles about R</a></li>
+<li><a href="https://rweekly.org/">Rweekly.org - a weekly curated list of updates from the R community</a></li>
+</ol>
+<p>For more advanced users, useful reference guides are:</p>
+<ol style="list-style-type: decimal">
+<li><a href="http://adv-r.had.co.nz/">Advanced R, first edition</a> more advanced techniques using mainly baseR</li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R, second edition</a> the updated book, which incorporates some of the tidyverse ideas.</li>
+</ol>
+<p>Additionally, you could also sign up to online courses from Coursera, Stanford, CodeAcademy, etc. that teach R with the added benefit of certification at the end.</p>
+</div>
+<div id="conclusion" class="section level2" number="5.4">
+<h2><span class="header-section-number">5.4</span> Conclusion</h2>
+<p>There are, of course, other free statistical tools available out there. We have chosen to focus on R as it is one of the more prevalent programming languages being used in the actuarial space. R brings with it many benefits which you may find useful in the work that you do. Have a go and try it out!</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-started-f-getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="f-glms.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

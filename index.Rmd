@@ -1,0 +1,54 @@
+--- 
+title: "MLRWP content prototype"
+author: "MLR working party"
+date: "`r format(Sys.time(), '%d %B %Y') `"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+#bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: grainnemcguire/testbook
+description: "desc desc"
+always_allow_html: true
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(tidy = TRUE)   # need to install formatR for this to work
+
+# load libraries
+library(here)
+library(data.table)
+
+```
+
+
+
+
+# Introduction {-}
+
+This is experimental work on ways of displaying MLRWP content.
+For the actual content itself, refer to https://institute-and-faculty-of-actuaries.github.io/mlr-blog/
+
+
+* We are considering collating MLRWP posts into an online book so they are more easily located
+
+* This is a prototype of how it might look
+
+
+## Rendering book {-}
+
+Can either use the preview book add-in or `bookdown::render_book('index.Rmd', 'bookdown::gitbook')` to render on demand.
+
+
+
+## Misc points {-}
+
+* will need to use renv to ensure that this can be run - each time it is updated, it will need to be rebuilt.
+
+
+
+

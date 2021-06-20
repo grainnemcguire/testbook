@@ -1,0 +1,80 @@
+# Introduction to R {#f-intro-r}
+
+*This [article](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/post/intro-to-r/) was written by Wan Hsien Heah and originally published on 21 Sep 2020*
+
+There are several different data science tools available today. 
+R is one such tool that is used quite widely, free and easy to get started with. 
+R started out as an experiment at the University of Auckland to see if an existing language called S could be improved such that code would be cleaner and easier to run.
+It has come a long way since its humble beginnings in the mid-90s. 
+Today, R is used for a variety of tasks including complex capital model calculations and running machine learning algorithms in pricing and reserving.
+
+## Why use R?
+
+There are a number of benefits to using R. These are:
+
+* **Free**: There is no license fee associated with using R (although beware that there may be license restrictions with using R packages).
+
+* **Widely used**: R has a large user base, with data scientists, data miners, statisticians and actuaries using the tool around the world. That means that it only takes a quick search on the internet to get help with any problem that you might be experiencing with coding in R.
+
+* **An R-ready workforce**: R is now a part of the UK Institute and Faculty of Actuaries (IFoA) exam syllabus. Increasingly, more and more university students are also learning R as part of the undergraduate course in statistics and actuarial science.
+
+* **R is fast**: R is usually faster at computational problems compared to traditional tools like Excel. For example, R can generate a million random standard Normal samples in less than a second. This is because of the way R is structured and the way it works. R can even be faster than server-based languages like SQL.
+
+* **Packages**: There are many freely available reusable R code libraries available online called packages. These packages have been built by other R users and perform a variety of calculations or processes which means that you do not have to start from scratch all the time. The crowd-sourced sharing of packages helps accelerate development time in R. We will cover some of the more useful packages for actuaries in our future blog posts.
+
+
+## How do I get started?
+
+R is available to download from the Comprehensive R Archive Network (CRAN) at https://cran.r-project.org/. 
+CRAN is a network of servers around the world that contains copies of the R application and the various packages which is continuously being updated and maintained. 
+To get started, you will first need to download R from the CRAN homepage. 
+
+<img src="images/CRAN Landing.jpg" alt="CRAN homepage" width="95%"/>
+
+Select the appropriate download for your operating system and follow the usual instructions to compile.
+You will usually want to download the most recent version, but occasionally you may need to download older versions if, for example, a package you need to use has not yet been updated to run on the latest version of R.
+ 
+The instructions for each platform will be on the website as you click the version of R that you need. 
+For this blog post, we will focus on the Windows version of R as it is the more common platform used by actuaries.
+ 
+For first time users, you will need to install base R. 
+It is important to note that base R is a console application i.e. the main interaction is through text. 
+Most users will want to use an Integrated Development Environment (IDE) or a user interface. So, after downloading R, you should consider installing an IDE such as RStudio.
+You should install R first, then RStudio.
+
+RStudio provides a graphical user interface (GUI) that provides a more visual interaction when using R. 
+You can download a free desktop version from the RStudio website: https://rstudio.com/. 
+There are also paid options for support and for running and maintaining a server.
+
+Once you have both R and RStudio installed, you are ready to begin coding.
+
+
+## Hello World!
+
+Now that you have the minimum software required installed, you can start coding. 
+Getting started can be quite daunting as there are various schools of thought on how to use R and which packages. 
+Base R is what comes built into R. 
+There are also a growing series of data manipulation packages commonly known as tidyverse which consists of packages developed and maintained by RStudio.
+Beyond that there are other data manipulation packages such as data.table.
+Each have their advantages and disadvantages depending on the precise operation that you would like to perform
+
+There are several free resources available for learning R which you can find on the internet. We list a few of them here:
+
+1. [R for Data Science](https://r4ds.had.co.nz/)
+1. [R-bloggers - an aggregator of online articles about R](https://www.r-bloggers.com/)
+1. [Rweekly.org - a weekly curated list of updates from the R community](https://rweekly.org/)
+
+For more advanced users, useful reference guides are:
+
+1. [Advanced R, first edition](http://adv-r.had.co.nz/) more advanced techniques using mainly baseR
+1. [Advanced R, second edition](https://adv-r.hadley.nz/) the updated book, which incorporates some of the tidyverse ideas.
+
+
+Additionally, you could also sign up to online courses from Coursera, Stanford, CodeAcademy, etc. that teach R with the added benefit of certification at the end.
+
+
+## Conclusion
+
+There are, of course, other free statistical tools available out there. We have chosen to focus on R as it is one of the more prevalent programming languages being used in the actuarial space. R brings with it many benefits which you may find useful in the work that you do. Have a go and try it out!
+
+ 

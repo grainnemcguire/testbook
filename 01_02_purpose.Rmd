@@ -1,0 +1,41 @@
+# Purpose of the book {#purpose}
+
+This book is a prototype!
+
+This book gathers together our various blog posts into one place for more convenient future access.
+
+For up to date posts, and all historical ones, see our [website](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/)
+
+
+## Introduction
+ 
+*by Sarah MacDonnell* 
+ 
+It's probably fair to say that we are living in the era of big data and machine learning. In the actuarial world machine learning (ML) has certainly made inroads into personal lines pricing - tight margins and high competitiveness create a large incentive to extract as much value and insight from data as possible.
+ 
+It appears that there has been less use of machine learning in reserving, possibly due to less obvious or immediate competitive advantages. However we think there are significant potential benefits to be had from introducing machine learning into reserving. 
+ 
+Such techniques applied to richer, more detailed and broader datasets may allow us to gain insights we have not been able to conceive of before; be it as new segmentations, operational improvements, early warning systems, cost efficiencies, or revelations into claim life cycles, settlement patterns or consumer behaviour.
+ 
+There may also be operational efficiencies to be gained; freeing time for targeted deep dives, allowing more frequent updates, or benefitting those with very large numbers of diverse classes.
+ 
+The General Insurance Machine Learning in Reserving Working Party (MLR WP) was established in 2019 with the aim of assisting the adoption of ML techniques in reserving. We are lucky to have a large and active membership comprising data scientists and academics as well as reserving and pricing actuaries. Some members of the working party have already written papers in this field, and we have strong representation in countries across the world (including the UK, Europe, the US, Australia, China, India and Africa). Our ambition is to become a global hub for this field; providing resources and bringing researchers together.
+ 
+To help us achieve this we currently have the following workstreams:
+ 
+* [**Foundations**](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/foundations): to provide useful educational resources, including sharing of code
+* [**Literature Review**](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/literature-review): to review and promote relevant papers (and help us bring together the best ideas that are out there)
+* [**Survey**](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/survey): to understand what is currently being done on the ground, and identify any barriers
+* [**Data**](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/data): to collate and promote sources of data that are available to help further research
+* [**Research**](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/project/research): to undertake our own research projects.
+ 
+Further details of each of these workstreams is available [here](https://institute-and-faculty-of-actuaries.github.io/mlr-blog/#projects). Additional workstreams will come on line (for example covering more practical considerations such as interpretation and communication of models, and ethics) as the working party progresses.
+
+
+## Blog
+ 
+Recognising that ML is a fast-moving field, we have set up a website and blog to share our work.
+Our intention is to post articles regularly from each of the workstreams.
+Initially it is anticipated that most of the articles will be from the Foundations workstream and aimed at those starting their journey in ML, but in time all current and future workstreams intend to produce material.
+ 
+This book gathers together our posts. See the blog for more recent articles.
